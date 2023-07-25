@@ -49,6 +49,24 @@ main {
   border-radius: 3px;
 }
 
+.list-score {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.item {
+  height: 2rem;
+  padding: 0 1rem;
+  padding-top: 0.6rem;
+  font-weight: 500;
+}
+
 footer {
   position: fixed;
   left: 0;
