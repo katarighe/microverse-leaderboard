@@ -8,11 +8,13 @@ html {
 body {
   width: 60%;
   font-family: 'Open Sans', sans-serif;
+  align-items: center;
 }
 
 h1 {
   padding: 1.5rem;
   font-size: 2.75rem;
+  text-align: center;
 }
 
 h2 {
@@ -26,7 +28,7 @@ main {
 
 .left-class {
   width: 50%;
-  padding: 1.5rem;
+  padding: 0 1.5rem;
 }
 
 .left-header {
@@ -57,14 +59,57 @@ main {
   text-align: center;
   font-size: 1rem;
   cursor: pointer;
+  border: 2px solid black;
   border-radius: 4px;
 }
 
 .item {
+  font-weight: 500;
   height: 2rem;
   padding: 0 1rem;
   padding-top: 0.6rem;
+}
+
+.right-class {
+  width: 50%;
+  padding: 0 20px 1.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+input {
+  margin: 0.3rem 0;
+  padding: 0.2rem 0.2rem;
+}
+
+input::placeholder {
+  font-family: 'Open Sans', sans-serif;
   font-weight: 500;
+  font-size: 0.75rem;
+  color: black;
+  padding: 5px;
+}
+
+.item:nth-of-type(even) {
+  background: rgba(209, 202, 202, 0.63);
+}
+
+#submit-button {
+  font-family: 'Open Sans', sans-serif;
+  align-self: flex-end;
+  background-color: blueviolet;
+  color: white;
+  height: 2rem;
+  font-size: 0.75rem;
+  border: none;
+  text-align: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 3px;
 }
 
 footer {
