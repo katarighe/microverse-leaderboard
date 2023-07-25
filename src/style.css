@@ -11,7 +11,7 @@ body {
 }
 
 h1 {
-  padding: 0 1.5rem;
+  padding: 1.5rem;
   font-size: 2.75rem;
 }
 
@@ -22,4 +22,40 @@ h2 {
 main {
   display: flex;
   flex-direction: row;
+}
+
+.left-class {
+  width: 50%;
+  padding: 1.5rem;
+}
+
+.left-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.button {
+  font-family: 'Open Sans', sans-serif;
+  align-self: center;
+  background-color: blueviolet;
+  height: 2rem;
+  border: none;
+  color: white;
+  padding: 0 1.5rem;
+  text-align: center;
+  font-size: 0.75rem;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: violet;
+  color: white;
+  text-align: center;
+  justify-content: center;
 }
