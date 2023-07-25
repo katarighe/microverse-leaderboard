@@ -28,7 +28,7 @@ main {
 }
 
 .left-class {
-  width: 50%;
+  width: 70%;
   padding: 0 1.5rem;
 }
 
@@ -104,7 +104,7 @@ input::placeholder {
   align-self: flex-end;
   background-color: blueviolet;
   color: white;
-  height: 2rem;
+  height: 1px 2rem;
   font-size: 0.75rem;
   border: none;
   text-align: center;
