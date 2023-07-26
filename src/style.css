@@ -38,7 +38,7 @@ main {
   justify-content: space-between;
 }
 
-.button {
+.refresh-button {
   font-family: 'Open Sans', sans-serif;
   align-self: center;
   background-color: blueviolet;
