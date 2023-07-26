@@ -32,3 +32,11 @@ const addtoUI = (arr) => {
 const getScores = () => {
     leaderboard.getScores(gameId).then((response) => addtoUI(response.result));
 };
+
+const postScore = () => {
+    leaderboard.postScore(gameId, nameInput.value, scoreInput.value);
+
+    nameInput.value =  '';
+    scoreInput.value =  '';
+    e.preventDefault();
+}; 
