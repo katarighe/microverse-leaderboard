@@ -25,6 +25,11 @@ async getScores(gameId) {
   return responseData;
 }
 
+async postScore (gameId, name, score) {
+  if (name === '' || score === '') {
+    alert('Incomplete, please provide all the information');
+  }    
+}
 }
 
 export default Leaderboard;
