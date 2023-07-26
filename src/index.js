@@ -19,3 +19,12 @@ const startGame = () => {
         [gameId] = [res[3]];
     });
 };
+
+const addtoUI = (arr) => {
+    list.innerHTML = '';
+    arr.for.Each((el) => {
+        list.innerHTML += `
+        <li class="item">${el.user} : ${el.score}</li>
+        `;
+    });
+};
