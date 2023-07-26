@@ -19,6 +19,12 @@ class Leaderboard {
   return responseData;
 }
 
+async getScores(gameId) {
+  const responseStart = await fetch(`${this.url}${gameId}/scores/`);
+  const responseData = await responseStart.json();
+  return responseData;
+}
+
 }
 
 export default Leaderboard;
