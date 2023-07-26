@@ -27,7 +27,7 @@ async getScores(gameId) {
 
 async postScore (gameId, name, score) {
   if (name === '' || score === '') {
-    alert('Incomplete, please provide all the information');
+    alert('You need to provide a valid name for the game');
   }
   const responseStart = await fetch(`${this.url}${gameId}/scores/`, {
     method: 'POST',
