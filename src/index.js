@@ -7,6 +7,6 @@ const scoreInput = document.querySelector('#score');
 const refresh = document.querySelector('button');
 const list = document.querySelector('.-list-score');
 
-const leaderboard = new Leaderboard ();
+const leaderboard = new Leaderboard();
 
 // Start
