@@ -10,3 +10,12 @@ const list = document.querySelector('.-list-score');
 const leaderboard = new Leaderboard();
 
 // Start
+let gameId;
+const startGame = () => {
+    leaderboard
+    .startGame('Project Leaderboard')
+    .then((response) => response.result.split(''))
+    .then((res) => {
+        [gameId] = [res[3]];
+    });
+};
