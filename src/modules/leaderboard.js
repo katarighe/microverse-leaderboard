@@ -1,5 +1,5 @@
 class Leaderboard {
-    constructor () {
+  constructor() {
     this.url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';
   }
 
@@ -15,34 +15,33 @@ class Leaderboard {
       },
     });
 
-  const responseData = await responseStart.json();
-  return responseData;
-}
-
-async getScores(gameId) {
-  const responseStart = await fetch(`${this.url}${gameId}/scores/`);
-  const responseData = await responseStart.json();
-  return responseData;
-}
-
-async postScore (gameId, name, score) {
-  if (name === '' || score === '') {
-    alert('You need to provide a valid name for the game');
+    const responseData = await responseStart.json();
+    return responseData;
   }
-  const responseStart = await fetch(`${this.url}${gameId}/scores/`, {
-    method: 'POST',
-    body: JSON.stringify({
-      user: name,
-      score,
-    }),
-    headers: {
-      'Content-type': 'application/json; charset=UTF-8',
-    },
-  });
-  
-  const responseData = await responseStart.json();
-  return responseData;
 
+  async getScores(gameId) {
+    const responseStart = await fetch(`${this.url}${gameId}/scores/`);
+    const responseData = await responseStart.json();
+    return responseData;
+  }
+
+  async postScore(gameId, name, score) {
+    if (name === '' || score === '') {
+      alert('You need to provide a valid name for the game');
+    }
+    const responseStart = await fetch(`${this.url}${gameId}/scores/`, {
+      method: 'POST',
+      body: JSON.stringify({
+        user: name,
+        score,
+      }),
+      headers: {
+        'Content-type': 'application/json; charset=UTF-8',
+      },
+    });
+
+    const responseData = await responseStart.json();
+    return responseData;
   }
 }
 

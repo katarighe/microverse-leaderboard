@@ -16,13 +16,13 @@ const startGame = () => {
     .startGame('Term Project')
     .then((response) => response.result.split(' '))
     .then((res) => {
-    [gameId] = [res[3]];
+      [gameId] = [res[3]];
     });
 };
 
 const addToUI = (arr) => {
-list.innerHTML = '';
-arr.forEach((el) => {
+  list.innerHTML = '';
+  arr.forEach((el) => {
     list.innerHTML += `
     <li class="item">${el.user} : ${el.score}</li>
     `;
@@ -30,15 +30,15 @@ arr.forEach((el) => {
 };
 
 const getScores = () => {
-    leaderboard.getScores(gameId).then((response) => addToUI(response.result));
+  leaderboard.getScores(gameId).then((response) => addToUI(response.result));
 };
 
 const postScore = (e) => {
-    leaderboard.postScore(gameId, nameInput.value, scoreInput.value);
+  leaderboard.postScore(gameId, nameInput.value, scoreInput.value);
 
-    nameInput.value = '';
-    scoreInput.value = '';
-    e.preventDefault();
+  nameInput.value = '';
+  scoreInput.value = '';
+  e.preventDefault();
 };
 
 document.addEventListener('DOMContentLoaded', startGame);
