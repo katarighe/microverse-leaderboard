@@ -28,3 +28,7 @@ const addtoUI = (arr) => {
         `;
     });
 };
+
+const getScores = () => {
+    leaderboard.getScores(gameId).then((response) => addtoUI(response.result));
+};
