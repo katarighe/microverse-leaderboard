@@ -116,7 +116,17 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n\n//# sourceURL=webpack://microverse-leaderboard/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _modules_leaderboard_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/leaderboard.js */ \"./src/modules/leaderboard.js\");\n\r\n\r\n\r\nconst addForm = document.querySelector('form');\r\nconst nameInput = document.querySelector('#name');\r\nconst scoreInput = document.querySelector('#score');\r\nconst refresh = document.querySelector('refresh-button');\r\nconst list = document.querySelector('.list-score');\r\n\r\nconst leaderboard = new _modules_leaderboard_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"]();\r\n\r\n// Start\r\nlet gameId;\r\nconst startGame = () => {\r\n    leaderboard\r\n    .startGame('Project Leaderboard')\r\n    .then((response) => response.result.split(''))\r\n    .then((res) => {\r\n        [gameId] = [res[3]];\r\n    });\r\n};\r\n\r\nconst addtoUI = (arr) => {\r\n    list.innerHTML = '';\r\n    arr.for.Each((el) => {\r\n        list.innerHTML += `\r\n        <li class=\"item\">${el.user} : ${el.score}</li>\r\n        `;\r\n    });\r\n};\r\n\r\nconst getScores = () => {\r\n    leaderboard.getScores(gameId).then((response) => addtoUI(response.result));\r\n};\r\n\r\nconst postScore = () => {\r\n    leaderboard.postScore(gameId, nameInput.value, scoreInput.value);\r\n\r\n    nameInput.value =  '';\r\n    scoreInput.value =  '';\r\n    e.preventDefault();\r\n}; \r\n\r\ndocument.addEventListener('DOMContentLoaded', startGame);\r\naddForm.addEventListener('submit', postScore);\r\nrefresh.addEventListener('click', getScores); \n\n//# sourceURL=webpack://microverse-leaderboard/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/modules/leaderboard.js":
+/*!************************************!*\
+  !*** ./src/modules/leaderboard.js ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nclass Leaderboard {\r\n    constructor () {\r\n    this.url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';\r\n  }\r\n\r\n  // Start\r\n  async startGame(gameName) {\r\n    const responseStart = await fetch(this.url, {\r\n      method: 'POST',\r\n      body: JSON.stringify({\r\n        name: gameName,\r\n      }),\r\n      headers: {\r\n        'Content-type': 'application/json; charset=UTF-8',\r\n      },\r\n    });\r\n\r\n  const responseData = await responseStart.json();\r\n  return responseData;\r\n}\r\n\r\nasync getScores(gameId) {\r\n  const responseStart = await fetch(`${this.url}${gameId}/scores/`);\r\n  const responseData = await responseStart.json();\r\n  return responseData;\r\n}\r\n\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Leaderboard);\n\n//# sourceURL=webpack://microverse-leaderboard/./src/modules/leaderboard.js?");
 
 /***/ })
 
