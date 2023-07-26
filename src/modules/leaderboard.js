@@ -39,9 +39,11 @@ async postScore (gameId, name, score) {
       'Content-type': 'application/json; charset=UTF-8',
     },
   });
+  
   const responseData = await responseStart.json();
   return responseData;
- }
+
+  }
 }
 
 export default Leaderboard;

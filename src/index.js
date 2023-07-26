@@ -13,14 +13,14 @@ const leaderboard = new Leaderboard();
 let gameId;
 const startGame = () => {
     leaderboard
-    .startGame('Project Leaderboard')
-    .then((response) => response.result.split(''))
+    .startGame('Term Project')
+    .then((response) => response.result.split(' '))
     .then((res) => {
         [gameId] = [res[3]];
     });
 };
 
-const addtoUI = (arr) => {
+const addToUI = (arr) => {
     list.innerHTML = '';
     arr.for.Each((el) => {
         list.innerHTML += `
@@ -30,7 +30,7 @@ const addtoUI = (arr) => {
 };
 
 const getScores = () => {
-    leaderboard.getScores(gameId).then((response) => addtoUI(response.result));
+    leaderboard.getScores(gameId).then((response) => addToUI(response.result));
 };
 
 const postScore = (e) => {
