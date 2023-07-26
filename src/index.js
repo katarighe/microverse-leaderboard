@@ -33,7 +33,7 @@ const getScores = () => {
     leaderboard.getScores(gameId).then((response) => addtoUI(response.result));
 };
 
-const postScore = () => {
+const postScore = (e) => {
     leaderboard.postScore(gameId, nameInput.value, scoreInput.value);
 
     nameInput.value =  '';
