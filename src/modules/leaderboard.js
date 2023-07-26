@@ -28,8 +28,20 @@ async getScores(gameId) {
 async postScore (gameId, name, score) {
   if (name === '' || score === '') {
     alert('Incomplete, please provide all the information');
-  }    
-}
+  }
+  const responseStart = await fetch(`${this.url}${gameId}/scores/`, {
+    method: 'POST',
+    body: JSON.stringify({
+      user: name,
+      score,
+    }),
+    headers: {
+      'Content-type': 'application/json; charset=UTF-8',
+    },
+  });
+  const responseData = await responseStart.json();
+  return responseData;
+ }
 }
 
 export default Leaderboard;
