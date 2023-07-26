@@ -15,6 +15,7 @@
       "no-param-reassign": "off",
       "eol-last": "off",
       "linebreak-style": "off",
+      "no-alert": "off",
       "import/extensions": [ 1, {
         "js": "always", "json": "always"
       }]
