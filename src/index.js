@@ -1,3 +1,3 @@
 import './style.css';
-import Leaderboard from './js/leaderboard.js';
+import Leaderboard from './modules/leaderboard.js';
 
