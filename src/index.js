@@ -1,5 +1,5 @@
 import './style.css';
-import UI from './modules/user-interface.js'
+import UI from './modules/user-interface.js';
 import Leaderboard from './modules/leaderboard.js';
 
 const addForm = document.querySelector('form');
