@@ -213,5 +213,6 @@ _NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/
 
 <!-- Project Gallery -->
 ## 🖼️ Project Gallery <a name="gallery"></a>
+![image](https://github.com/katarighe/microverse-leaderboard/assets/80690364/c61f8b71-54c3-47e9-904b-8274a38b3ae3)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
