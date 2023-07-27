@@ -28,7 +28,7 @@ h1 {
   font-size: 2.75rem;
   text-align: center;
   font-weight: 800;
-  color: darkviolet;
+  color: #9400d3;
 }
 
 h2 {
@@ -54,10 +54,10 @@ main {
 .button {
   font-family: 'Open Sans', sans-serif;
   align-self: center;
-  background-color: blueviolet;
+  background-color: #8a2be2;
   height: 2rem;
   border: none;
-  color: white;
+  color: #eee;
   padding: 0 1.5rem;
   text-align: center;
   font-size: 0.75rem;
@@ -82,6 +82,7 @@ main {
   height: 2rem;
   padding: 0 1rem;
   padding-top: 0.6rem;
+  border: 1px solid;
 }
 
 .right-header {
@@ -98,7 +99,7 @@ main {
 form {
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 80%;
 }
 
 input {
@@ -110,7 +111,7 @@ input::placeholder {
   font-family: 'Open Sans', sans-serif;
   font-weight: 500;
   font-size: 0.75rem;
-  color: black;
+  color: #000;
   padding: 5px;
 }
 
@@ -121,8 +122,8 @@ input::placeholder {
 #submit-button {
   font-family: 'Open Sans', sans-serif;
   align-self: flex-end;
-  background-color: blueviolet;
-  color: white;
+  background-color: #8a2be2;
+  color: #eee;
   height: 2rem;
   font-size: 0.75rem;
   border: none;
@@ -137,8 +138,8 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: blueviolet;
-  color: white;
+  background-color: #8a2be2;
+  color: #eee;
   text-align: center;
   justify-content: center;
 }
