@@ -3,12 +3,22 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url('https://png.pngtree.com/background/20210709/original/pngtree-creative-gradient-color-performance-leaderboard-background-material-picture-image_957327.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 body {
   width: 60%;
+  height: 90vh;
   font-family: 'Open Sans', sans-serif;
   align-items: center;
+  border-radius: 10px;
+  background-color: white;
+  background-image: url('https://t4.ftcdn.net/jpg/03/85/42/77/360_F_385427790_M4qA77J7nYgZCMP6Ezn9qo6PglF0j4mv.jpg');
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: 25%;
 }
 
 h1 {
