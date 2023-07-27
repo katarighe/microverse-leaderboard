@@ -10,7 +10,7 @@ html {
 
 body {
   width: 60%;
-  height: 90vh;
+  height: 85vh;
   font-family: 'Open Sans', sans-serif;
   align-items: center;
   border-radius: 10px;
@@ -19,6 +19,8 @@ body {
   background-repeat: no-repeat;
   background-position: 100% 100%;
   background-size: 25%;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 h1 {
