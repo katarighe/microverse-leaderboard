@@ -22,7 +22,6 @@
   - [Run tests](#run-tests)
   - [Deployment](#deployment)
 - [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
@@ -33,7 +32,9 @@
 
 # 📖 Microverse Leaderboard <a name="about-project"></a>
 
-The Microverse Leaderboard is a web application that lists everything that a person has to do. 
+The Microverse Leaderboard is a web application that displays scores submitted by different players. It also allows you to submit your score and then refreshes. 
+
+All data is preserved thanks to the external Leaderboard API service.
 
 This project is represented under Module 2 "JavaScript and Networking".
 
@@ -88,10 +89,9 @@ The Microverse Leaderboard project is built and configured using the following t
 
 > The features of the Microverse Leaderboard includes:
 
-- **Adding a new task**
-- **Removing a listed task**
-- **Marking a selected item as "complete"**
-- **Removing all listed items at once**
+- **Send and receive data from API**
+- **Previous Scores List**
+- **Feature that adds the score of each player"**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -101,7 +101,7 @@ The Microverse Leaderboard project is built and configured using the following t
 
 > The Live Demo of the project is live! Please click the link below. 👇
 
-[Live Demo Link](https://katarighe.github.io/to-do-list/dist)
+[Live Demo Link](https://katarighe.github.io/microverse-leaderboard/dist)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -173,18 +173,6 @@ You can deploy this project using [GitHub Pages](https://pages.github.com/), it 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FUTURE FEATURES -->
-
-## 🔭 Future Features <a name="future-features"></a>
-
-> The following featurs will be add to the project in the future.
-
-- [ ] **Add Button**: The Add Button will be added into the application for better convience when interacting with the mouse. 
-- [ ] **Categories**: This feature will help us divide the To Do list into different categories such as Home, Work, and Travel. 
-- [ ] **Better User Interface (UI)**: Improving the UI of the To Do List will help users visitng this app more friendly and accessible.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
@@ -225,5 +213,6 @@ _NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/
 
 <!-- Project Gallery -->
 ## 🖼️ Project Gallery <a name="gallery"></a>
+![image](https://github.com/katarighe/microverse-leaderboard/assets/80690364/c61f8b71-54c3-47e9-904b-8274a38b3ae3)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

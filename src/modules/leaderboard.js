@@ -27,7 +27,7 @@ class Leaderboard {
 
   async postScore(gameId, name, score) {
     if (name === '' || score === '') {
-      alert('You need to provide a valid name for the game');
+      alert('Please enter a valid name');
     }
     const responseStart = await fetch(`${this.url}${gameId}/scores/`, {
       method: 'POST',

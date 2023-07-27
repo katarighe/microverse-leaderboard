@@ -3,12 +3,24 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url('https://images.unsplash.com/photo-1557682250-33bd709cbe85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 body {
   width: 60%;
+  height: 90vh;
   font-family: 'Open Sans', sans-serif;
   align-items: center;
+  border-radius: 10px;
+  background-color: white;
+  background-image: url('https://t4.ftcdn.net/jpg/03/85/42/77/360_F_385427790_M4qA77J7nYgZCMP6Ezn9qo6PglF0j4mv.jpg');
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: 25%;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 h1 {
@@ -16,6 +28,7 @@ h1 {
   font-size: 2.75rem;
   text-align: center;
   font-weight: 800;
+  color: #9400d3;
 }
 
 h2 {
@@ -41,10 +54,10 @@ main {
 .button {
   font-family: 'Open Sans', sans-serif;
   align-self: center;
-  background-color: blueviolet;
+  background-color: #8a2be2;
   height: 2rem;
   border: none;
-  color: white;
+  color: #eee;
   padding: 0 1.5rem;
   text-align: center;
   font-size: 0.75rem;
@@ -69,6 +82,13 @@ main {
   height: 2rem;
   padding: 0 1rem;
   padding-top: 0.6rem;
+  border: 1px solid;
+}
+
+.right-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .right-class {
@@ -79,7 +99,7 @@ main {
 form {
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 80%;
 }
 
 input {
@@ -91,7 +111,7 @@ input::placeholder {
   font-family: 'Open Sans', sans-serif;
   font-weight: 500;
   font-size: 0.75rem;
-  color: black;
+  color: #000;
   padding: 5px;
 }
 
@@ -102,8 +122,8 @@ input::placeholder {
 #submit-button {
   font-family: 'Open Sans', sans-serif;
   align-self: flex-end;
-  background-color: blueviolet;
-  color: white;
+  background-color: #8a2be2;
+  color: #eee;
   height: 2rem;
   font-size: 0.75rem;
   border: none;
@@ -118,8 +138,8 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: blueviolet;
-  color: white;
+  background-color: #8a2be2;
+  color: #eee;
   text-align: center;
   justify-content: center;
 }
