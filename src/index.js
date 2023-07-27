@@ -1,13 +1,14 @@
 import './style.css';
+import UI from './modules/user-interface.js'
 import Leaderboard from './modules/leaderboard.js';
 
 const addForm = document.querySelector('form');
 const nameInput = document.querySelector('#name');
 const scoreInput = document.querySelector('#score');
 const refresh = document.querySelector('button');
-const list = document.querySelector('.list-score');
 
 const leaderboard = new Leaderboard();
+const ui = new UI();
 
 // Start
 let gameId;
@@ -20,21 +21,13 @@ const startGame = () => {
     });
 };
 
-const addToUI = (arr) => {
-  list.innerHTML = '';
-  arr.forEach((el) => {
-    list.innerHTML += `
-    <li class="item">${el.user} : ${el.score}</li>
-    `;
-  });
-};
-
 const getScores = () => {
   leaderboard.getScores(gameId).then((response) => addToUI(response.result));
 };
 
 const postScore = (e) => {
   leaderboard.postScore(gameId, nameInput.value, scoreInput.value);
+  ui.cleanInputs();
 
   nameInput.value = '';
   scoreInput.value = '';
