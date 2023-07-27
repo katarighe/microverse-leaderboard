@@ -3,7 +3,7 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url('https://png.pngtree.com/background/20210709/original/pngtree-creative-gradient-color-performance-leaderboard-background-material-picture-image_957327.jpg');
+  background-image: url('https://images.unsplash.com/photo-1557682250-33bd709cbe85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -26,6 +26,7 @@ h1 {
   font-size: 2.75rem;
   text-align: center;
   font-weight: 800;
+  color: darkviolet;
 }
 
 h2 {
@@ -81,6 +82,12 @@ main {
   padding-top: 0.6rem;
 }
 
+.right-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .right-class {
   width: 50%;
   padding: 0 20px 1.5rem;
@@ -89,7 +96,7 @@ main {
 form {
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 90%;
 }
 
 input {
