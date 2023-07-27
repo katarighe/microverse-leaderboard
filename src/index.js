@@ -22,7 +22,7 @@ const startGame = () => {
 };
 
 const getScores = () => {
-  leaderboard.getScores(gameId).then((response) => addToUI(response.result));
+  leaderboard.getScores(gameId).then((response) => ui.addToUI(response.result));
 };
 
 const postScore = (e) => {
